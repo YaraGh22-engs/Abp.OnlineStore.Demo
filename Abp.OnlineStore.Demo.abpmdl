@@ -1,0 +1,85 @@
+{
+  "template": "app",
+  "imports": {
+    "Volo.Abp.Account": {
+      "version": "8.3.0",
+      "isInstalled": true
+    },
+    "Volo.Abp.OpenIddict": {
+      "version": "8.3.0",
+      "isInstalled": true
+    },
+    "Volo.Abp.Identity": {
+      "version": "8.3.0",
+      "isInstalled": true
+    },
+    "Volo.Abp.TenantManagement": {
+      "version": "8.3.0",
+      "isInstalled": true
+    }
+  },
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {}
+    }
+  },
+  "packages": {
+    "Abp.OnlineStore.Demo.Application": {
+      "path": "src/Abp.OnlineStore.Demo.Application/Abp.OnlineStore.Demo.Application.abppkg",
+      "folder": "src"
+    },
+    "Abp.OnlineStore.Demo.Application.Tests": {
+      "path": "test/Abp.OnlineStore.Demo.Application.Tests/Abp.OnlineStore.Demo.Application.Tests.abppkg",
+      "folder": "test"
+    },
+    "Abp.OnlineStore.Demo.Domain.Shared": {
+      "path": "src/Abp.OnlineStore.Demo.Domain.Shared/Abp.OnlineStore.Demo.Domain.Shared.abppkg",
+      "folder": "src"
+    },
+    "Abp.OnlineStore.Demo.Application.Contracts": {
+      "path": "src/Abp.OnlineStore.Demo.Application.Contracts/Abp.OnlineStore.Demo.Application.Contracts.abppkg",
+      "folder": "src"
+    },
+    "Abp.OnlineStore.Demo.HttpApi": {
+      "path": "src/Abp.OnlineStore.Demo.HttpApi/Abp.OnlineStore.Demo.HttpApi.abppkg",
+      "folder": "src"
+    },
+    "Abp.OnlineStore.Demo.HttpApi.Client": {
+      "path": "src/Abp.OnlineStore.Demo.HttpApi.Client/Abp.OnlineStore.Demo.HttpApi.Client.abppkg",
+      "folder": "src"
+    },
+    "Abp.OnlineStore.Demo.EntityFrameworkCore.Tests": {
+      "path": "test/Abp.OnlineStore.Demo.EntityFrameworkCore.Tests/Abp.OnlineStore.Demo.EntityFrameworkCore.Tests.abppkg",
+      "folder": "test"
+    },
+    "Abp.OnlineStore.Demo.EntityFrameworkCore": {
+      "path": "src/Abp.OnlineStore.Demo.EntityFrameworkCore/Abp.OnlineStore.Demo.EntityFrameworkCore.abppkg",
+      "folder": "src"
+    },
+    "Abp.OnlineStore.Demo.TestBase": {
+      "path": "test/Abp.OnlineStore.Demo.TestBase/Abp.OnlineStore.Demo.TestBase.abppkg",
+      "folder": "test"
+    },
+    "Abp.OnlineStore.Demo.Domain.Tests": {
+      "path": "test/Abp.OnlineStore.Demo.Domain.Tests/Abp.OnlineStore.Demo.Domain.Tests.abppkg",
+      "folder": "test"
+    },
+    "Abp.OnlineStore.Demo.HttpApi.Client.ConsoleTestApp": {
+      "path": "test/Abp.OnlineStore.Demo.HttpApi.Client.ConsoleTestApp/Abp.OnlineStore.Demo.HttpApi.Client.ConsoleTestApp.abppkg",
+      "folder": "test"
+    },
+    "Abp.OnlineStore.Demo.DbMigrator": {
+      "path": "src/Abp.OnlineStore.Demo.DbMigrator/Abp.OnlineStore.Demo.DbMigrator.abppkg",
+      "folder": "src"
+    },
+    "Abp.OnlineStore.Demo.HttpApi.Host": {
+      "path": "src/Abp.OnlineStore.Demo.HttpApi.Host/Abp.OnlineStore.Demo.HttpApi.Host.abppkg",
+      "folder": "src"
+    },
+    "Abp.OnlineStore.Demo.Domain": {
+      "path": "src/Abp.OnlineStore.Demo.Domain/Abp.OnlineStore.Demo.Domain.abppkg",
+      "folder": "src"
+    }
+  }
+}
