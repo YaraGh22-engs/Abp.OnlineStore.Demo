@@ -10,9 +10,9 @@ namespace Abp.OnlineStore.Demo.Categories
 {
     public class Category : FullAuditedEntity<int>
     {
-        public Category(string nameAr, string nameEn, string descriptionAr  , string descriptionEn ) 
+        public Category(string nameAr, string nameEn, string descriptionAr  , string descriptionEn )  
         {
-           
+            
             NameAr = nameAr;
             NameEn = nameEn;
             DescriptionAr = descriptionAr;

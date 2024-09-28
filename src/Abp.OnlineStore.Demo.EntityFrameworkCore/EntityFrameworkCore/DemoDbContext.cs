@@ -14,6 +14,9 @@ using Volo.Abp.SettingManagement.EntityFrameworkCore;
 using Volo.Abp.OpenIddict.EntityFrameworkCore;
 using Volo.Abp.TenantManagement;
 using Volo.Abp.TenantManagement.EntityFrameworkCore;
+using Abp.OnlineStore.Demo.Configurations;
+using Abp.OnlineStore.Demo.Products;
+using Abp.OnlineStore.Demo.Categories;
 
 namespace Abp.OnlineStore.Demo.EntityFrameworkCore;
 
@@ -57,6 +60,10 @@ public class DemoDbContext :
 
     #endregion
 
+    public DbSet<Product> Products { get; set; }
+    public DbSet<Category> Categories { get; set; }
+
+
     public DemoDbContext(DbContextOptions<DemoDbContext> options)
         : base(options)
     {
@@ -78,14 +85,11 @@ public class DemoDbContext :
         builder.ConfigureOpenIddict();
         builder.ConfigureTenantManagement();
         builder.ConfigureBlobStoring();
-        
+
         /* Configure your own tables/entities inside here */
 
-        //builder.Entity<YourEntity>(b =>
-        //{
-        //    b.ToTable(DemoConsts.DbTablePrefix + "YourEntities", DemoConsts.DbSchema);
-        //    b.ConfigureByConvention(); //auto configure for the base class props
-        //    //...
-        //});
+        builder.ApplyConfiguration(new ProductConfiguration());
+        builder.ApplyConfiguration(new CategoryConfiguration());
+
     }
 }
