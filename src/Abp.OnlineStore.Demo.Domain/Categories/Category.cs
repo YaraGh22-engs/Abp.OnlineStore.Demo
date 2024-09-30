@@ -10,7 +10,7 @@ namespace Abp.OnlineStore.Demo.Categories
 {
     public class Category : FullAuditedEntity<int>
     {
-        public Category(string nameAr, string nameEn, string descriptionAr  , string descriptionEn )  
+        public Category(int id, string nameAr, string nameEn, string descriptionAr, string descriptionEn) : base(id)
         {
             
             NameAr = nameAr;
